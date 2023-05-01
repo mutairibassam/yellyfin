@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Download Video by ID</title>
+  </head>
+  <body>
+    <h1>YouTube Downloader</h1>
+    <hr>
+    <form>
+      <h3>Download a video:</h3>
+      <label for="video-id">Video ID:</label>
+      <input type="text" id="video-id" name="video-id" placeholder="liJVSwOiiwg">
+      <button type="button" onclick="downloadVideo()">Download</button>
+      <a href=""></a>
+      <br>
+      <h3>Download a full playlist:</h3>
+      <label for="playlist-id">Playlist ID:</label>
+      <input type="text" id="playlist-id" name="playlist-id" size="50px" placeholder="PLfMzBWSH11xYhKhBEgoSxgjggOuSKjs6j">
+      <button type="button" onclick="downloadPlaylist()">Download</button>
+      <br>
+      <h3>Download all videos from a channel:</h3>
+      <label for="channel-id">Channel ID:</label>
+      <input type="text" id="channel-id" name="channel-id" size="30px" placeholder="UCgarbQ6xYfkAZpZw_-75vkA">
+      <button type="button" onclick="downloadChannel()">Download</button>
+      <p><a href="https://commentpicker.com/youtube-channel-id.php">Convert channel name to channel id </a></p>
+    </form>
+    <br>
+    <input type="text" id="base-url" name="base-url" placeholder="utility to update base url" size="80px">
+    <button type="button" onclick="updateUrl()">Update</button>
+    <p id="result"></p>
+
+    <footer></footer>
+    <script src="script.js"></script>
+  </body>
+</html>
